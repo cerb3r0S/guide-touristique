@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-bg {
+  background-image: url('../public/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Custom colors for the new palette */
+@layer base {
+  :root {
+    --color-F2F2F2: #F2F2F2;
+    --color-2E3140: #2E3140;
+    --color-0486D8: #0486D8;
+    --color-049CD8: #049CD8;
+    --color-0378A6: #0378A6;
+  }
+}
+
+@layer utilities {
+  .text-F2F2F2 { color: #F2F2F2; }
+  .text-2E3140 { color: #2E3140; }
+  .text-0486D8 { color: #0486D8; }
+  .text-049CD8 { color: #049CD8; }
+  .text-0378A6 { color: #0378A6; }
+  
+  .bg-F2F2F2 { background-color: #F2F2F2; }
+  .bg-2E3140 { background-color: #2E3140; }
+  .bg-0486D8 { background-color: #0486D8; }
+  .bg-049CD8 { background-color: #049CD8; }
+  .bg-0378A6 { background-color: #0378A6; }
+  
+  .hover\:text-049CD8:hover { color: #049CD8; }
+  .hover\:text-0486D8:hover { color: #0486D8; }
+  .hover\:text-0378A6:hover { color: #0378A6; }
+  
+  .hover\:bg-0378A6:hover { background-color: #0378A6; }
+  .hover\:bg-F2F2F2:hover { background-color: #F2F2F2; }
+}
